@@ -108,7 +108,7 @@ Package: whonix-shared-default-applications-gui
 Architecture: all
 Pre-Depends: whonix-legacy
 Depends: sdwdate-gui, msgcollector-gui, anon-iceweasel-warning, anon-icon-pack,
- whonix-setup-wizard, ${misc:Depends}
+ whonix-setup-wizard, dbus-x11, ${misc:Depends}
 Replaces: anon-shared-default-applications
 Description: Recommended packages for Whonix-Gateway and Whonix-Workstation GUI
  A metapackage, which installs recommended graphical user interface (GUI)
@@ -132,7 +132,7 @@ Package: kicksecure-desktop-environment-essential-gui
 Architecture: all
 Depends: xserver-xorg, xserver-xorg-video-qxl, xserver-xorg-video-fbdev,
  xserver-xorg-video-vesa, libgl1-mesa-dri, upower, gtk2-engines-pixbuf,
- xauth, xpra | xserver-xephyr | xvfb,
+ xauth, xpra | xserver-xephyr | xvfb, dbus-x11,
  ${misc:Depends}
 Replaces: anon-shared-desktop, hardened-desktop-environment-essential-gui
 Description: Desktop Depends GUI
